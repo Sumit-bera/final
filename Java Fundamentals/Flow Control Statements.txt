@@ -1,0 +1,463 @@
+Java Fundamentals
+Topic: Flow Control Statements
+--------------------------------------------------------------------
+
+Assignment:1
+
+import java.util.Scanner;
+
+public class Assignment01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Enter the number:");
+		int num = scan.nextInt();
+		
+		if(num > 0) {
+			System.out.println("Number is Positive");
+		}
+		else if(num < 0) {
+			System.out.println("Number is Negative");
+		}
+		else {
+			System.out.println("Number is Zero");
+		}
+		
+	}
+
+}
+
+------------------------------------------------------------------------
+
+Assignment 2:
+
+import java.util.Scanner;
+
+public class Assignment02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Enter the number:");
+		int num = scan.nextInt();
+		
+		if(num % 2 != 0) {
+			System.out.println("Number is Odd");
+		}
+		else {
+			System.out.println("Number is Even");
+		}
+	}
+
+}
+
+-------------------------------------------------------------------
+Assignment 3:
+
+public class Assignment03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		if(args.length == 0) {
+			System.out.println("No values");
+		}
+		else {
+			for(String name : args) {
+				System.out.print(name + " ");
+			}
+		}
+	}
+
+}
+
+---------------------------------------------------------------------
+
+Assignment 4:
+public class Assignment04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char var1 = 's';
+		char var2 = 'e';
+		
+		if (var1 > var2)
+            System.out.println(var2+" , "+var1);
+        else
+            System.out.println(var1+" , "+var2);
+	}
+
+}
+
+-------------------------------------------------------------------
+
+Assignment 5:
+public class Assignment05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char var = '@';
+		
+		if((var >= 65 && var <= 90) || (var >= 97 && var <= 122) ) {
+			System.out.println("Alphabet");
+		}
+		else if(var >= 48 && var <= 57) {
+			System.out.println("Number");
+		}
+		else {
+			System.out.println("Special Character");
+		}
+	}
+
+}
+
+---------------------------------------------------------------------------------
+Assignment 6:
+
+public class Assignment06 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int age = Integer.parseInt(args[1]);
+		
+		if(args[0].equals("Female")) {
+			if(age >= 1 && age <= 58) {
+				System.out.println("the percentage of interest is 8.2%");
+			}
+			else {
+				System.out.println("the percentage of interest is 9.2%");
+			}
+		}
+		else {
+			if(age >= 1 && age <= 58) {
+				System.out.println("the percentage of interest is 8.4%");
+			}
+			else {
+				System.out.println("the percentage of interest is 10.5%");
+			}
+		}
+	}
+
+}
+-----------------------------------------------------------------------------------------------
+
+Assignment 7: 
+public class Assignment07 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char var = 'a';
+		if (var >= 'a' && var <= 'z')
+			System.out.println((char)(var-32));
+	     else
+	    	 System.out.println((char)(var+32)); 	
+	}
+
+}
+
+-------------------------------------------------------------------------------
+Assignment 8:
+
+import java.util.Scanner;
+
+public class Assignment08 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter color code :");
+		char color = scan.next().charAt(0);
+		
+		switch(color){
+			case 'R' :
+			case 'r' :
+				System.out.println("Red");
+				break;
+				
+			case 'B' :
+			case 'b' :
+				System.out.println("Blue");
+				break;
+				
+			case 'G' :
+			case 'g' :
+				System.out.println("Green");
+				break;
+				
+			case 'O' :
+			case 'o' :
+				System.out.println("Orange");
+				break;
+				
+			case 'Y' :
+			case 'y' :
+				System.out.println("Yellow");
+				break;
+				
+			case 'W' :
+			case 'w' :
+				System.out.println("White");
+				break;
+				
+			default :
+				System.out.println("Invalid Code");
+		}
+	}
+
+}
+
+-----------------------------------------------------------------------------------
+
+Assignment 9:
+
+public class Assignment09 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		switch(args[0]) {
+		case "1":
+			System.out.println("January");
+			break;
+		
+		case "2":
+			System.out.println("February");
+			break;
+	
+		case "3":
+			System.out.println("March");
+			break;
+
+		case "4":
+			System.out.println("April");
+			break;
+			
+		case "5":
+			System.out.println("May");
+			break;
+		
+		case "6":
+			System.out.println("June");
+			break;
+			
+		case "7":
+			System.out.println("July");
+			break;
+			
+		case "8":
+			System.out.println("August");
+			break;
+			
+		case "9":
+			System.out.println("September");
+			break;
+			
+		case "10":
+			System.out.println("October");
+			break;
+			
+		case "11":
+			System.out.println("November");
+			break;
+			
+		case "12":
+			System.out.println("December");
+			break;
+			
+		default:
+			System.out.println("Invalid Month");
+		}
+	}
+
+}
+
+-----------------------------------------------------------------------------------
+Assignment 10:
+public class Assignment10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for(int i = 1; i <= 10; i++) {
+			System.out.print(i+" ");
+		}
+	}
+
+}
+---------------------------------------------------------------------------
+Assignment 11: 
+public class Assignment11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for(int i = 23; i <= 57; i++) {
+			if(i % 2 == 0) {
+				System.out.println(i);
+			}
+		}
+	}
+
+}
+---------------------------------------------------------------------------
+Assignment 12:
+
+import java.util.Scanner;
+
+public class Assignment12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter the number:");
+		int num = scan.nextInt();
+		int count = 0;
+		
+		for(int i = 2; i < num/2; i++) {
+			if(num % i == 0) {
+				count++;
+			}
+			else {
+				continue;
+			}
+		}
+		if(count == 0) {
+			System.out.println("Number is prime");
+		}
+		else {
+			System.out.println("Number is NOT prime");
+		}
+	}
+
+}
+---------------------------------------------------------------------------
+Assignment 13:
+
+public class Assignment13 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int flag;
+		for(int i = 10; i <= 99; i++) {
+			flag = 1;
+			for(int j = 2; j <= i/2; j++) {
+				if(i % j == 0) {
+					flag = 0;
+					break;
+				}
+			}
+			if(flag == 1) {
+				System.out.print(i+" ");
+			}
+		}
+	}
+
+}
+----------------------------------------------------------------------
+Assignment 14:
+
+import java.util.Scanner;
+
+public class Assignment14 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter the number: ");
+		int num = scan.nextInt();
+		int sum;
+		
+		for(sum = 0; num > 0; num = num/10) 
+	        	sum = sum + (num % 10);
+		
+		System.out.println(sum);
+	}
+	
+
+}
+-------------------------------------------------------------
+Assignment 15:
+
+import java.util.Scanner;
+
+public class Assignment15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int count;
+		if(args.length == 0) {
+			Scanner scan = new Scanner(System.in);
+			System.out.println("Please enter an integer number:");
+			count = scan.nextInt();
+		}
+		else {
+			count = Integer.parseInt(args[0]);
+		}
+		System.out.println("Using For Loop :");
+		for(int i = 1; i <= count; i++) {
+			for(int j = 1; j <=i; j++) {
+				System.out.print("*");
+			}
+			System.out.println(" ");
+		}
+		
+		System.out.println("Using While Loop :");
+		int i = count, j;													
+		while(i >= 1){
+		    j = i;
+		    while(j <= count){
+		    	System.out.print("*");
+		        j++;
+		    }
+		    i--;
+		    System.out.println(" ");
+		}
+	}
+}
+-------------------------------------------------------------------
+Assignment 16:
+
+import java.util.Scanner;
+
+public class Assignment16 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter the number :");
+		int num = scan.nextInt();
+		int digit, reverse = 0;
+		
+		while(num > 0) {
+			digit = num % 10;
+			reverse = reverse * 10 + digit;
+			num = num / 10;
+		}
+		System.out.println(reverse);
+	}
+
+}
+------------------------------------------------------------------
+Assignment 17:
+public class Assignment17 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num = Integer.parseInt(args[0]);
+		int temp = num, digit, reverse = 0;
+		
+		while(temp > 0) {
+			digit = temp % 10;
+			reverse = reverse * 10 + digit;
+			temp = temp / 10;
+		}
+		
+		if(num == reverse) {
+			System.out.println(num + " "+ "is a palindrome");
+		}
+		else {
+			System.out.println(num + " "+ "is not a palindrome");
+		}
+	}
+
+}
+
